@@ -1,0 +1,23 @@
+version: '2'
+
+services:
+  server:
+    build: .
+    volumes:
+      - ./:/app
+    ports:
+      - 8080:3000
+    env_file:
+      - .env
+    links:
+      - database
+    command: ['npm', 'start']
+  database:
+    image: postgres:9.6-alpine
+    ports:
+      - 11543:5432
+    volumes:
+      - database-data:/var/lib/postgresql/data
+
+volumes:
+  database-data: {}

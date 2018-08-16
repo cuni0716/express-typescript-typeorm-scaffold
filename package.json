@@ -1,0 +1,23 @@
+{
+  "name": "my-awesome-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.18.3",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.1"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "pg": "^7.4.3",
+    "reflect-metadata": "^0.1.12",
+    "typeorm": "^0.2.7"
+  }
+}
